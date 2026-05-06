@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { useRender } from "@base-ui/react/use-render";
 import { mergeProps } from "@base-ui/react/merge-props";
-import { cn } from "../lib/utils";
+import { cn } from "@tamor/ui/lib/utils";
 import { Spinner } from "@tamor/ui/components/spinner";
 
 const buttonVariants = cva(
