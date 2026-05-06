@@ -1,0 +1,57 @@
+{
+    "name": "@tamor/ui",
+    "private": true,
+    "version": "0.0.0",
+    "sideEffects": [
+        "**/*.css"
+    ],
+    "exports": {
+        "./styles.css": {
+            "import": "./src/styles/globals.css",
+            "default": "./src/styles/globals.css"
+        },
+        "./lib/*": "./src/lib/*.ts",
+        "./components/*": "./src/components/*.tsx",
+        "./hooks/*": "./src/hooks/*.ts",
+        "./shared/*": "./src/shared/*.tsx"
+    },
+    "typesVersions": {
+        "*": {
+            "lib/*": [
+                "./src/lib/*.ts"
+            ],
+            "components/*": [
+                "./src/components/*.tsx"
+            ],
+            "hooks/*": [
+                "./src/hooks/*.ts"
+            ],
+            "shared/*": [
+                "./src/shared/*.tsx"
+            ]
+        }
+    },
+    "scripts": {
+        "lint": "biome lint src",
+        "lint:fix": "biome lint --write src",
+        "type-check": "tsc --pretty --noEmit",
+        "type-check:ci": "tsc-absolute --pretty --noEmit"
+    },
+    "dependencies": {
+        "@base-ui/react": "^1.4.1",
+        "class-variance-authority": "^0.7.1",
+        "lucide-react": "^1.14.0"
+    },
+    "peerDependencies": {
+        "react": "^19.2.5",
+        "react-dom": "^19.2.5"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.4.14",
+        "tailwindcss": "^4.2.4",
+        "tailwind-merge": "^3.5.0",
+        "tailwind-config": "*",
+        "postcss": "^8.5.14",
+        "typescript": "6.0.3"
+    }
+}
