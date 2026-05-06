@@ -13,7 +13,8 @@
   "dependencies": {
     "@storybook/addon-links": "^10.3.6",
     "@storybook/addon-themes": "^10.3.6",
-    "@tamor/ui": "workspace:*",
+    "@tamor/ui": "*",
+    "@tamor-ui/tailwind-config": "*",
     "bun-plugin-tailwind": "^0.0.15",
     "react": "^19",
     "react-dom": "^19",

@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 import defaultTheme from "tailwindcss/defaultTheme";
-// import tailwindAnimated from "tailw"
+import tailwindAnimate from "tailwindcss-animate";
 
 export const darkMode = ["class"];
 export const content = [
@@ -9,7 +9,7 @@ export const content = [
   "./components/**/*.{ts,tsx}",
   "./app/**/*.{ts,tsx}",
   "./src/**/*.{ts,tsx}",
-  "../../../packages/ui/*{tsx,jsx,ts,js}",
+  "../../packages/ui/src/**/*.{js,ts,jsx,tsx}",
 ];
 export const prefix = "";
 export const theme = {
@@ -80,6 +80,4 @@ export const theme = {
     },
   },
 };
-export const plugins = [
-  // require("tailwindcss-animate")
-];
+export const plugins = [tailwindAnimate];
